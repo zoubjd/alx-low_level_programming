@@ -12,7 +12,7 @@ char str[] = "_putchar";
 int i = 0;
 while (i < 8)
 {
-write(0, &str[i], 1);
+_putchar(str[i]);
 i++;
 }
 return (0);
