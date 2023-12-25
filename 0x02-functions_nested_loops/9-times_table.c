@@ -17,8 +17,15 @@ for (j = 0; j < 10; j++)
 result = i * j;
 if (result < 10)
 {
+if (j < 0)
+{
 _putchar(' ');
 _putchar('0' + result);
+}
+else
+{
+_putchar('0' + result);
+}
 }
 else
 {
