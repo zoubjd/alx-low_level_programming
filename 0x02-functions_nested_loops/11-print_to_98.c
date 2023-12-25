@@ -42,6 +42,6 @@ else
 {
 printf("%d ", 98);
 }
-_putchar('\n');
+printf("\n");
 }
 
