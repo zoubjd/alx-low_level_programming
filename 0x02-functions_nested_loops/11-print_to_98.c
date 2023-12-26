@@ -17,7 +17,7 @@ for (i = n; i <= 98; i++)
 if (i == 98)
 {
 printf("%d \n", i);
-printf("\n");
+_putchar('\n');
 }
 else
 {
@@ -32,7 +32,7 @@ for (i = n; i >= 98; i--)
 if (i == 98)
 {
 printf("%d \n", i);
-printf("\n");
+_putchar('\n');
 }
 else
 {
