@@ -3,8 +3,12 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
-int main(void) /* this is the main function that checks the number*/
+/**
+ * main - Entry point
+ * Description: 'the program outputs the sign of n'
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
 	int n;
 
