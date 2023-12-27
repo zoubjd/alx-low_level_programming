@@ -10,11 +10,16 @@
 int main(void)
 {
 int i = 0;
-char alph[] = "0123456789abcdef";
-while (i < 17)
+int j = 97;
+while (i < 10)
 {
-putchar(alph[i]);
+putchar('0' + i);
 i++;
+}
+while (j < 103)
+{
+putchar(j);
+j++;
 }
 putchar('\n');
 return (0);
