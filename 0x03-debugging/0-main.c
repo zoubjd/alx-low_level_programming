@@ -9,15 +9,7 @@ int main(void)
 {
 int i;
 i = 0;
-char test[] = positive_or_negative(i);
-char result[] = "0 is zero";
-if (strcmp(test, result) == 0)
-{
+positive_or_negative(i);
 return (0);
-}
-else
-{
-return (1);
-}
 }
 
