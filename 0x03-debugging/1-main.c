@@ -3,6 +3,8 @@
 /**
 * main - causes an infinite loop
 * Return: 0
+* hello
+* heeelo
 */
 
 int main(void)
