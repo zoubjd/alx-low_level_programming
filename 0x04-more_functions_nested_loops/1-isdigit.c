@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _isupper - Entry point
+ * _isdigit - Entry point
  * Description: 'the program outputs if c is number'
  * @c: is the ccharacter that's checked
  * Return: (Success)
