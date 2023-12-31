@@ -30,7 +30,7 @@ _putchar('\n');
 i++;
 }
 }
-else 
+else
 {
 _putchar('\n');
 }
