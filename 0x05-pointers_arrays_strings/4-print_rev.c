@@ -9,18 +9,14 @@
 
 void print_rev(char *s)
 {
-int count = 0;
-while (*s != '\0')
-{
-count++;
-s++;
+const char *end = s;
+while (*end) {
+end++;
 }
-s--;
-while (count >= 0)
-{
-_putchar(*s);
-count--;
-s--;
+end--;
+while (end >= s) {
+_putchar(*end);
+end--;
 }
 _putchar('\n');
 }
