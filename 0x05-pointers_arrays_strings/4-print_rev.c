@@ -10,11 +10,13 @@
 void print_rev(char *s)
 {
 const char *end = s;
-while (*end) {
+while (*end)
+{
 end++;
 }
 end--;
-while (end >= s) {
+while (end >= s)
+{
 _putchar(*end);
 end--;
 }
