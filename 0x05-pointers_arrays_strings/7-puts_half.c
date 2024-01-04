@@ -16,7 +16,8 @@ while (*end)
 count++;
 end++;
 }
-if (count % 2 == 0) {
+if (count % 2 == 0)
+{
 end = str + count / 2;
 }
 else
@@ -24,7 +25,8 @@ else
 end = str + count / 2;
 end++;
 }
-while (*end != '\0') {
+while (*end != '\0')
+{
 _putchar(*end);
 end++;
 }
