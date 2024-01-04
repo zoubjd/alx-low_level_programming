@@ -21,7 +21,8 @@ end = str + count / 2;
 }
 else
 {
-end = str + (count - 1) / 2;
+end = str + count / 2;
+end++;
 }
 while (*end != '\0') {
 _putchar(*end);
