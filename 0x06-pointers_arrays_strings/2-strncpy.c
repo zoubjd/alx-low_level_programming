@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * p_strncpy - check the code
+ * _strncpy - check the code
  * description: the program copies a string to another
  * @dest: is the first string
  * @src: is the second string
@@ -20,6 +20,9 @@ dest++;
 src++;
 i++;
 }
+if (i < n)
+{
 *dest = '\0';
+}
 return (start);
 }
