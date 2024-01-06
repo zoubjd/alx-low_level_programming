@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_rev - check the code
- * description: the program gothers 2 strings
- * @dest: is the first string
- * @src: is the second string
+ * _strcmp - check the code
+ * description: the program compairs 2 strings
+ * @s1: is the first string
+ * @s2: is the second string
  * Return: Always 0.
  */
 
@@ -20,11 +20,11 @@ s2++;
 }
 if (s1 > s2)
 {
-return (15);
+return (1);
 }
 else if (s1 < s2)
 {
-return (-15);
+return (-1);
 }
 else
 {
