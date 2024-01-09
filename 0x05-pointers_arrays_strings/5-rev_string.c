@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * rev_string - check the code
@@ -9,15 +10,15 @@
 
 void rev_string(char *s)
 {
-const char *end = s;
-while (*end)
+char *start = s;
+char *end = s + strlen(s) - 1;
+char temp;
+while (end > start)
 {
-end++;
-}
-end--;
-while (end)
-{
-*s = *end;
+temp = *start;
+*start = *end;
+*end = temp;
+start++;
 end--;
 }
 }
