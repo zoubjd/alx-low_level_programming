@@ -1,11 +1,11 @@
 #include <string.h>
 #include <stdio.h>
 
-/*
- * main - description
- * program: outputs a string
- * return 0
- * */
+/**
+ * main - check the code
+ * description: the program prints a string
+ * Return: Always 0.
+ */
 
 int main(void)
 {
