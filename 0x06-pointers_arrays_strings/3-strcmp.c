@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcmp - check the code
@@ -10,21 +11,15 @@
 
 int _strcmp(char *s1, char *s2)
 {
-while (*s1)
+int len1 = strlen(s1);
+int len2 = strlen(s2);
+if (len1 > len2)
 {
-s1++;
+return (15);
 }
-while (*s2)
+else if (len1 < len2)
 {
-s2++;
-}
-if (s1 > s2)
-{
-return (1);
-}
-else if (s1 < s2)
-{
-return (-1);
+return (-15);
 }
 else
 {
