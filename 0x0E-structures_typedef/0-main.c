@@ -6,20 +6,6 @@
  *
  * Return: Always 0.
  */
-/*
- * struct dog - Short description
- * @name: the name of the dog
- * @age: the age of the dog
- * @owner: the name of the owner of the dog
- *
- * Description: this is a description for the dog structure
- */
-struct dog
-{
-char *name;
-float age;
-char *owner;
-};
 
 int main(void)
 {
