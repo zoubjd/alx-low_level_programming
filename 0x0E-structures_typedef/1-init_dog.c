@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include "dog.h"
- struct doggy
- {
-	char *owner;
-	char *name;
-	float age;
- };
- 
+
+/**
+ * init_dog - Entry point
+ * Description: 'the program modifys the pre existing struct'
+ * @d: the pre existing struct
+ * @name: the name that should be modifiyed
+ * @owner: the owner that should be modifiyed
+ * @age: the age that should be modifiyed
+ * Return: Always 0 (Success)
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct doggy *ptr;
-	ptr = d;
-	ptr->age = age;
-	ptr->name = name;
-	ptr->owner = owner;
-
+d->age = age;
+d->name = name;
+d->owner = owner;
 }
