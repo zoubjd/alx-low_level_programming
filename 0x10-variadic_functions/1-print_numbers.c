@@ -2,9 +2,10 @@
 #include <stdarg.h>
 
 /**
-* sum_them_all - check the code
-* description: the progrogram sums
+* print_numbers - check the code
+* description: the progrogram prints
 * @n: the first int
+* @separator: the string to be printed between two ints
 * @...: the rest of nums
 * Return: Always 0.
 */
