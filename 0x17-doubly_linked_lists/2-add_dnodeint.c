@@ -4,12 +4,13 @@
 #include <stdio.h>
 
 /**
- * dlistint_len - check code
- * Description: calculates the lenght of doubly linked lists
+ * add_dnodeint - check code
+ * Description: adds a new node in the head
  *
- * @h: the head of the list
+ * @head: the head of the list
+ * @n: content of the node
  *
- * Return: the number of elements in the list
+ * Return: the new node
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
