@@ -30,6 +30,10 @@ if (h == NULL)
 {
 return (NULL);
 }
+if (idx == 0)
+{
+return (add_dnodeint(h, n));
+}
 
 new->n = n;
 if (*h == NULL)
@@ -40,6 +44,10 @@ return (new);
 temp = *h;
 while (temp->next != NULL)
 {
+if (temp == NULL)
+{
+return (NULL);
+}
 if (count == new_index)
 {
 new->next = temp;
