@@ -18,7 +18,7 @@ dlistint_t *temp;
 int idx = index;
 int i;
 
-if (head == NULL)
+if (head == NULL || *head == NULL)
 {
 return (-1);
 }
@@ -26,26 +26,32 @@ temp = *head;
 if (idx == 0)
 {
 *head = temp->next;
-temp->next->prev = NULL;
-temp->next = NULL;
+if (*head != NULL)
+{
+(*head)->prev = NULL;
+}
+free(temp);
 return (1);
 }
 for (i = 0; i < idx - 1 && temp != NULL; i++)
 {
 temp = temp->next;
 }
-if (temp == NULL)
+
+if (temp == NULL || temp->next == NULL)
 {
 return (-1);
 }
 if (temp->next != NULL)
 {
-temp->prev->next = temp->next;
-temp->next->prev = temp->prev;
+temp->next = temp->next->next;
+free(temp->next->prev);
+temp->next->prev = temp;
 }
 else
 {
-temp->prev->next = NULL;
+free(temp->next);
+temp->next = NULL;
 }
 return (1);
 }
