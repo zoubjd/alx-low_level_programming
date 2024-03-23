@@ -5,7 +5,7 @@
 
 /**
  * insert_dnodeint_at_index - check code
- * Description: gets the node at the wanted index
+ * Description: adds a node at the wanted index
  *
  * @h: the head of the list
  * @idx: the wanted index
